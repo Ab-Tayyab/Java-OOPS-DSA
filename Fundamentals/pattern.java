@@ -208,55 +208,147 @@ public class pattern {
         // int n = 5;
         // upper half
         // for (int i = 1; i <= n; i++) {
-        //     for (int j = 1; j <= i; j++) {
-        //         if (j == 1 || j == i) {
-        //             System.out.print("*");
-        //         } else {
-        //             System.out.print(" ");
-        //         }
-        //     }
-        //     for (int k = 1; k <= 2 * (n - i); k++) {
-        //         System.out.print(" ");
-        //     }
-        //     for (int l = 1; l <= i; l++) {
-        //         if (l == 1 || l == i) {
-        //             System.out.print("*");
-        //         } else {
-        //             System.out.print(" ");
-        //         }
-        //     }
-        //     System.out.println();
+        // for (int j = 1; j <= i; j++) {
+        // if (j == 1 || j == i) {
+        // System.out.print("*");
+        // } else {
+        // System.out.print(" ");
+        // }
+        // }
+        // for (int k = 1; k <= 2 * (n - i); k++) {
+        // System.out.print(" ");
+        // }
+        // for (int l = 1; l <= i; l++) {
+        // if (l == 1 || l == i) {
+        // System.out.print("*");
+        // } else {
+        // System.out.print(" ");
+        // }
+        // }
+        // System.out.println();
         // }
         // // lower half
         // for (int i = n; i >= 1; i--) {
-        //     for (int j = 1; j <= i; j++) {
-        //         if (j == 1 || j == i) {
-        //             System.out.print("*");
-        //         } else {
-        //             System.out.print(" ");
-        //         }
-        //     }
-        //     for (int k = 1; k <= 2 * (n - i); k++) {
-        //         System.out.print(" ");
-        //     }
-        //     for (int l = 1; l <= i; l++) {
-        //         if (l == 1 || l == i) {
-        //             System.out.print("*");
-        //         } else {
-        //             System.out.print(" ");
-        //         }
-        //     }
-        //     System.out.println();
+        // for (int j = 1; j <= i; j++) {
+        // if (j == 1 || j == i) {
+        // System.out.print("*");
+        // } else {
+        // System.out.print(" ");
+        // }
+        // }
+        // for (int k = 1; k <= 2 * (n - i); k++) {
+        // System.out.print(" ");
+        // }
+        // for (int l = 1; l <= i; l++) {
+        // if (l == 1 || l == i) {
+        // System.out.print("*");
+        // } else {
+        // System.out.print(" ");
+        // }
+        // }
+        // System.out.println();
         // }
 
         // hollow rhombus pattern
 
         // for (int i = 1; i <= 5; i++) {
-        //     for (int j = 5; j >= i; j--) {
-        //         System.out.print(" ");
+        // for (int j = 5; j >= i; j--) {
+        // System.out.print(" ");
+        // }
+        // for (int k = 1; k <=5; k++) {
+        // if(i==1 || i==5 || k==1 || k==5){
+        // System.out.print("*");
+        // }
+        // else{
+        // System.out.print(" ");
+        // }
+        // }
+        // System.out.println();
+        // }
+
+        // half pyramid
+
+        // for(int i=1;i<=5;i++){
+        // for(int j=5;j>=i;j--){
+        // System.out.print(" ");
+        // }
+        // for(int k=1;k<=i;k++){
+        // System.out.print(k+" ");
+        // }
+        // System.out.println();
+        // }
+
+        // inverted half pyramid
+
+        // for(int i=5;i>=1;i--){
+        // for(int j=5;j>=i;j--){
+        // System.out.print(" ");
+        // }
+        // for(int k=1;k<=i;k++){
+        // System.out.print(i+" ");
+        // }
+        // System.out.println();
+        // }
+
+        // pascal pyramid pattern
+
+        // int n=5;
+        // for(int i=0;i<n;i++){
+        // for(int j=1;j<=n-i;j++){
+        // System.out.print(" ");
+        // }
+        // int num=1;
+        // for(int k=0;k<=i;k++){
+        // System.out.print(num+ " ");
+        // num = num*(i-k)/(k+1);
+        // }
+        // System.out.println();
+        // }
+
+        // Sandglass Pattern
+
+        // int n = 5;
+        // for (int i = n; i >=1; i--) {
+        // for (int k = 1; k <=n-i; k++) {
+        // System.out.print(" ");
+        // }
+        // for (int j = 1; j <=i; j++) {
+        // System.out.print("*");
+        // }
+        // System.out.println();
+        // }
+        // for (int i = 2; i <=n; i++) {
+        // for (int k = 1; k <=n-i; k++) {
+        // System.out.print(" ");
+        // }
+        // for (int j = 1; j <=i; j++) {
+        // System.out.print("*");
+        // }
+        // System.out.println();
+        // }
+
+        // pyarmid with star and number mix
+
+        // int num=1;
+        // for (int i = 1; i <= 5; i++) {
+        //         for (int j = 1; j <= num; j++) {
+        //             if(j==i){
+        //                 System.out.print(j);
+        //             }
+        //             else{
+        //                 System.out.print("*");
+        //         }
         //     }
-        //     for (int k = 1; k <=5; k++) {
-        //         if(i==1 || i==5 || k==1 || k==5){
+        //     num+=2;
+        //     System.out.println();
+        // }
+
+        // staircase pattern 
+
+        // int n=5;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=i;j++){
+        //         if(j==1 || i==n || j==i){
         //             System.out.print("*");
         //         }
         //         else{
@@ -266,41 +358,41 @@ public class pattern {
         //     System.out.println();
         // }
 
-        // half pyramid 
-
+        // binary number square
+        
         // for(int i=1;i<=5;i++){
-        //     for(int j=5;j>=i;j--){
-        //         System.out.print(" ");
-        //     }
-        //     for(int k=1;k<=i;k++){
-        //         System.out.print(k+" ");
-        //     }
-        //     System.out.println();
-        // }
-
-          // inverted half pyramid 
-
-        // for(int i=5;i>=1;i--){
-        //     for(int j=5;j>=i;j--){
-        //         System.out.print(" ");
-        //     }
-        //     for(int k=1;k<=i;k++){
-        //         System.out.print(i+" ");
+        //     for(int j=1;j<=5;j++){
+        //         if((i+j)%2==0){
+        //             System.out.print(1);
+        //         }
+        //         else{
+        //             System.out.print(0);
+        //         }
         //     }
         //     System.out.println();
         // }
 
-        // pascal pyramid pattern 
+        // concentric square pattern 
 
-        int n=5;
-        for(int i=0;i<n;i++){
-            for(int j=1;j<=n-i;j++){
-                System.out.print(" ");
-            }
-            int num=1;
-            for(int k=0;k<=i;k++){
-                System.out.print(num+ " ");
-              num = num*(i-k)/(k+1);
+        // int n=5;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=n;j++){
+        //        int min = Math.min(Math.min(i,j),Math.min(n-i+1,n-j+1));
+        //        System.out.print(5-min+1);
+        //     }
+        //     System.out.println();
+        // }
+
+        // number square pattern 
+
+        for(int i=1;i<=5;i++){
+            int num =i;
+            for(int j=1;j<=5;j++){
+                    System.out.print(num + " ");
+                    num++;
+                    if(num>5){
+                        num =1;
+                    }
             }
             System.out.println();
         }

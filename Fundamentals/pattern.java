@@ -327,7 +327,7 @@ public class pattern {
         // System.out.println();
         // }
 
-        // pyarmid with star and number mix
+        // pyramid with star and number mix
 
         // int num=1;
         // for (int i = 1; i <= 5; i++) {
@@ -385,14 +385,188 @@ public class pattern {
 
         // number square pattern 
 
+        // for(int i=1;i<=5;i++){
+        //     int num =i;
+        //     for(int j=1;j<=5;j++){
+        //             System.out.print(num + " ");
+        //             num++;
+        //             if(num>5){
+        //                 num =1;
+        //             }
+        //     }
+        //     System.out.println();
+        // }
+
+        // spiral pattern 
+
+        // int n=5;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=n;j++){
+        //         if(i%2!=0 && !(i==3 && j==4)){
+        //             System.out.print("*");
+        //         }
+        //         else{
+        //             if(j==n || (i==4 && j==1)){
+        //                 System.out.print("*");
+        //             }
+        //             else if(i==3 && j==4){
+        //                 System.out.print(" ");
+        //             }
+        //             else{
+        //                 System.out.print(" ");
+        //             }
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+
+        // checkboard pattern 
+
+        // int n=5;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=n;j++){
+        //         if(i%2==0 && j==1){
+        //             System.out.print(" *");
+        //         }
+        //         else{
+        //             System.out.print("*");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+
+        // square with diagonal 
+
+        // int n=5;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=n;j++){
+        //         if(i==2 && j==(n/2+1) || i==4 && j==(n/2+1) || i==3 && j==2 || i==3 && j==4){
+        //             System.out.print(" ");
+        //         }
+        //         else{
+        //             System.out.print("*");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+
+        // hourglass pattern 
+
+        // int n=3;
+        // int col=5;
+        // // upper half 
+        // for(int i=1;i<=n;i++){
+        //     for(int k=n;k>=n-i;k--){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j=1;j<=col;j++)
+        //     {
+        //         System.out.print("*");
+        //     }
+        //     col -=2;
+        //     System.out.println();
+        // }
+        // // lower half 
+
+        // int lcol=3;
+        //  for(int i=2;i<=n;i++){
+        //     for(int k=n;k>=i-1;k--){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j=1;j<=lcol;j++)
+        //     {
+        //         System.out.print("*");
+        //     }
+        //     lcol +=2;
+        //     System.out.println();
+        // }
+
+        // hollow pyramid 
+
+        // int n=5;
+        // int col=1;
+        // for(int i=1;i<=n;i++){
+        //     for(int k=n;k>=i;k--){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j=1;j<=col;j++)
+        //     {
+        //         if(i==n || j==1 || j==col){
+        //             System.out.print("*");
+        //         }
+        //         else{
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //     col+=2;
+        //     System.out.println();
+        // }
+
+        // plus pattern 
+
+        // int n=5;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=n;j++){
+        //         if(j==(n/2)+1 || i==(n/2)+1){
+        //             System.out.print("*");
+        //         }
+        //         else{
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+
+         // plus pattern 
+
+        // int n=5;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=n;j++){
+        //         if(i==j || j==n-i+1 || i==n-j+1){
+        //             System.out.print("*" );
+        //         }
+        //         else{
+        //             System.out.print(" ");
+        //         }
+        //     }
+          
+        //     System.out.println();
+        // }
+
+        // zig zag pattern 
+
+        // int n=5;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=n;j++){
+        //         if(i==j || j==n-i+1 || i==n-j+1){
+        //             System.out.print("*" );
+        //         }
+        //         else{
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //     for(int j=2;j<=n;j++){
+        //         if(i==j || j==n-i+1 || i==n-j+1){
+        //             System.out.print("*" );
+        //         }
+        //         else{
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+
+        // charcter pyramid 
+
         for(int i=1;i<=5;i++){
-            int num =i;
-            for(int j=1;j<=5;j++){
-                    System.out.print(num + " ");
-                    num++;
-                    if(num>5){
-                        num =1;
-                    }
+            for(int k=5;k>=i;k--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print((char)('A'+ j-1));
+            }
+             for(int j=i-1;j>=1;j--){
+                System.out.print((char)('A'+ j-1));
             }
             System.out.println();
         }

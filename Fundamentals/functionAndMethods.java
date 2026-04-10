@@ -109,19 +109,74 @@ public class functionAndMethods {
 
     // aligible for vote or note
 
-    public static void ageForVote(int a) {
-        Scanner sc = new Scanner(System.in);
-        if (a > 18) {
-            System.out.println("Enter your country name: ");
-            String nationality = sc.nextLine();
-            if (nationality.equals("Pakistan") || nationality.equals("pakistan")) {
-                System.out.println("You are aligible for vote.");
-            } else {
-                System.out.println("Your are not pakistani.");
-            }
-        } else {
-            System.out.println("You are under age.");
+    // public static void ageForVote(int a) {
+    // Scanner sc = new Scanner(System.in);
+    // if (a > 18) {
+    // System.out.println("Enter your country name: ");
+    // String nationality = sc.nextLine();
+    // if (nationality.equals("Pakistan") || nationality.equals("pakistan")) {
+    // System.out.println("You are aligible for vote.");
+    // } else {
+    // System.out.println("Your are not pakistani.");
+    // }
+    // } else {
+    // System.out.println("You are under age.");
+    // }
+    // }
+
+    // count positive negtive and zero number
+
+    // public static void countNumber() {
+    // int neg = 0;
+    // int pos = 0;
+    // int zero = 0;
+    // int num;
+    // int pr=1;
+    // Scanner sc = new Scanner(System.in);
+
+    // do {
+    // System.out.println("Enter number");
+    // num = sc.nextInt();
+    // if (num < 0) {
+    // neg++;
+    // } else if (num > 0) {
+    // pos++;
+    // } else {
+    // zero++;
+    // }
+    // System.out.println("Enter 0 for end program and 1 for continue: ");
+    // pr = sc.nextInt();
+    // } while (pr == 1);
+    // System.out.println("Positive number is: "+pos+" Negetive number is: "+neg+"
+    // and zero is: "+zero);
+    // }
+
+    // public static void commonDivisor(int a, int b) {
+    //     // while(b!=0){
+    //     // int temp=b;
+    //     // b=a%b;
+    //     // a=temp;
+    //     // }
+    //     // System.out.println(a);
+
+    //     int gcd=1;
+    //     int min = Math.min(a,b);
+    //     for (int i = 1; i <= min; i++) {
+    //         if (a % i == 0 && b % i == 0) {
+    //             gcd = i;
+    //         }
+    //     }
+    //     System.out.println(gcd);
+    // }
+
+    // raised power of another 
+
+    public static int powerFind(int a,int x){
+        int result =1;
+        for(int i=1;i<=a;i++){
+            result = result*x;
         }
+        return result;
     }
 
     public static void main(String args[]) {
@@ -129,13 +184,22 @@ public class functionAndMethods {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first number: ");
         int firstNumber = sc.nextInt();
-        // System.out.println("Enter second number: ");
-        // int secondNumber = sc.nextInt();
+        System.out.println("Enter second number: ");
+        int secondNumber = sc.nextInt();
         // System.out.println("Enter third number: ");
         // int thirdNumber = sc.nextInt();
 
+        // raised power of another 
+        System.out.println(powerFind(firstNumber,secondNumber));
+
+        // common divisor of two number
+        // commonDivisor(firstNumber, secondNumber);
+
+        // count positive and negtive number
+        // countNumber();
+
         // aligible for vote or not
-        ageForVote(firstNumber);
+        // ageForVote(firstNumber);
 
         // circumference if a circle
         // System.out.println("Circumference of a circle is:

@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class arrays {
-    public static void main(String args[]) {
+    public static void main(Strings args[]) {
 
         // first method of array declare
 

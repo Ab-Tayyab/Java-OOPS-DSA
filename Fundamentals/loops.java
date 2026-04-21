@@ -81,40 +81,39 @@ public class loops {
         // int n = sc.nextInt();
         // int count = 0;
         // if (n <= 1) {
-        //     System.out.println("Not a prime number.");
-        //     return;
+        // System.out.println("Not a prime number.");
+        // return;
         // }
         // for (int i = 2; i <=n/2; i++) {
-        //     if (n % i == 0) {
-        //         count++;
-        //     }
+        // if (n % i == 0) {
+        // count++;
+        // }
         // }
         // if (count ==0) {
-        //     System.out.println("Its a prime number.");
+        // System.out.println("Its a prime number.");
         // } else {
-        //     System.out.println("Not a prime number.");
+        // System.out.println("Not a prime number.");
         // }
 
-        // infinite loop 
+        // infinite loop
 
         // int n=1;
         // do{
-        //     System.out.println(n);
-        //     n++;
+        // System.out.println(n);
+        // n++;
         // }while(n>0);
 
-        // fibonacci series 
+        // fibonacci series
 
         System.out.println("Enter number: ");
         int num = sc.nextInt();
         int a = 0;
         int b = 1;
-        System.out.print(a + " " + b + " ");
-        for(int i=2;i<=num;i++){
-           int c= a+b;
-           System.out.print(c + " ");
-           a=b;
-           b=c;
+        for (int i = 2; i <= num; i++) {
+            System.out.print(a + " ");
+            int c = a + b;
+            a = b;
+            b = c;
         }
 
     }
